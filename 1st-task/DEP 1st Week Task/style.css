@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  padding: 2px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 1;
+  background: #292929;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  height: 25px;
+  width: auto;
+  margin-right: 10px;
+}
+nav .logo h1 {
+  font-size: 1.1rem;
+  background: linear-gradient(to right, #fff 0%, #fff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 1.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 95%;
+  font-weight: 400;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  /* background-color: #f5f5f5; */
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 1px;
+  background-color: #fff;
+  display: block;
+  margin: 7px auto;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger-active {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+}
+
+.hamburger-active .line:nth-child(2) {
+  width: 0px;
+}
+
+.hamburger-active .line:nth-child(1),
+.hamburger-active .line:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.hamburger-active .line:nth-child(1) {
+  transform: translateY(12px);
+}
+
+.hamburger-active .line:nth-child(3) {
+  transform: translateY(-5px) rotate(90deg);
+}
+
+.menubar {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  height: 100vh;
+  padding: 20% 0;
+  background: rgba(255, 255, 255);
+  transition: all 0.5s ease-in;
+  z-index: 2;
+}
+.active {
+  left: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.menubar ul {
+  padding: 0;
+  list-style: none;
+}
+.menubar ul li {
+  margin-bottom: 32px;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 95%;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menubar ul li a:hover {
+  background-color: #f5f5f5;
+}
+@media screen and (max-width: 790px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+.texts{
+    padding: 2rem 9%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin-top: -35rem;
+    margin-left: 7rem;
+    color: #f5f5f5;
+}
+
+.texts h1{
+    font-size: 3rem;
+}
+
+.texts p{
+    font-size: 2rem;
+    margin-right: 12rem;
+}
+
+button a{
+    padding: 2rem;
+    margin: .8rem;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+
+
+/* services section */
+
+.service{
+    position: relative;
+    padding: 2rem 9%;
+}
+
+.service h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.service p{
+    font-size: 1.4rem;
+
+}
+footer{
+    padding: 2rem 9%;
+    background: #292929;
+}
+
+.container{
+    /* max-width: 1200px; */
+    font-size: 20px;
+    margin: 1rem;
+    text-align: center;
+    /* margin-left: 22rem; */
+}
+
+.container a{
+    margin: 3rem;
+    margin-left: 2rem;
+    color: #ffff;
+
+}
+
+hr{
+     color: #ffff;
+}
+
+.text{
+    margin: 3rem;
+    line-height: 3rem;
+    font-size: 21px;
+    letter-spacing: 2px;
+    color: #ffff;
+}
+
+#icons{
+    letter-spacing: 30px;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.icon i{
+    color: #ffff;
+    font-size: 1.5rem;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 5rem;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.bi-facebook{
+  color: #fff;
+}
+
+.bi-instagram{
+  color: #fff;
+}
+
+.bi-linkedin{
+  color: #fff;
+}
+.bi-whatsapp{
+  color: #fff;
+}
+/* Desktop Screen */
+@media screen and (min-width:1024px) {
+  
+h1{
+  font-size: 2rem;
+}
+p{
+  font-size: 1.9rem;
+}
+}
+/* Tablet Screen  */
+@media screen and (min-width:768px) and (max-width:1023px){
+    html{
+        font-size: 55%;
+    }
+    h1{
+      font-size: 30px;
+    }
+    p{
+      font-size: 1rem;
+    }
+    
+}
+
+/* Smartphone */
+@media screen and (max-width:767px){
+
+  html {
+    font-size: 45%;
+  }
+
+  h1{
+    font-size: 23px;
+  }
+
+  p{
+    font-size: 0.8rem;
+  }
+
+}
+
+/* Mobile Phones */
+@media screen and (max-width:481px){
+
+  html {
+    font-size: 40%;
+  }
+
+  h1{
+    font-size:1rem;
+  }
+
+  p{
+    font-size: 0.7rem;
+  }
+
+  .container a{
+    width: 90%;
+    font-size: 1.5rem;
+  }
+
+}

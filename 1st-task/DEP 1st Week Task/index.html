@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Resposive Layouts</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <!-- <img src="" alt="logo" /> -->
+          <h1>Foodie</h1>
+        </div>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </nav>
+      <div class="menubar">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav> 
+    <section>
+      <div class="home">
+        <div class="bg">
+            <img src="./image/bg3.jpg" alt="" width="100%">
+            <div class="texts">
+                <h1>It is even better than an expensive Restaurant</h1>
+                    <p>Learn how to make your favorite restaurant's dishes</p><br>
+                   <button> <a href="#">Order Now</a></button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service">
+        <div class="service">
+            <h1>Services</h1>
+            <p>
+                Menu Creation: Develop a diverse and appealing menu that caters to different tastes and dietary needs.
+                Quality Ingredients: Source fresh and high-quality ingredients to maintain the standard of the dishes.
+                Order Management: Implement an efficient system for taking and processing orders.
+                Food Preparation: Ensure that food is prepared safely and hygienically by trained kitchen staff.
+                Timely Delivery: Offer reliable and timely food delivery services to meet customer expectations.
+                Customer Service: Provide excellent customer support to handle inquiries, complaints, and feedback.
+                Pricing Strategy: Set competitive prices that reflect the quality of the food and services offered.
+            </p>
+        </div>
+    </section>
+
+      <footer class="footer">
+        <div class="container">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact us</a>
+        <hr>
+        </div>
+        <div class="text">
+        <p>A food website offers a diverse selection of recipes, restaurant reviews, and cooking tips. Users can search and filter for their favorite dishes, read articles on food trends, leave ratings and comments. Additionally, the site may feature an online store for purchasing gourmet ingredients and kitchen tools.</p>
+        </div>
+        <div class="icon" id="icons">
+        <a href="#"><i class="bi bi-facebook"></i></a> 
+        <a href="#"><i class="bi bi-instagram"></i></a> 
+        <a href="#"><i class="bi bi-linkedin"></i></a> 
+        <a href="#"><i class="bi bi-whatsapp"></i></a> 
+        </div>
+        <div class="copyright">
+        <p>&copy; 2024 | Food Life | All rights reserved|</p>
+        </div>
+        </footer>
+  
+  
+  <script>
+    const mobileNav = document.querySelector(".hamburger");
+const navbar = document.querySelector(".menubar");
+
+const toggleNav = () => {
+  navbar.classList.toggle("active");
+  mobileNav.classList.toggle("hamburger-active");
+};
+mobileNav.addEventListener("click", () => toggleNav());
+  </script>
+
+  
+</body>
+</html>
